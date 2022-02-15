@@ -1,0 +1,86 @@
+.header {
+    background: #EFF4FF;
+    padding: 32px 0;
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+.time-work {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    img {
+        width: 26px;
+        margin-right: 13px;
+    }
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 25px;
+        margin-right: 9px;
+    }
+
+    a {
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+    }
+}
+
+.contacts {
+    display: flex;
+
+    h3 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    .smm {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        
+        img {
+            max-width: 21px;
+            transition: all 0.15s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__left {
+        margin-right: 14px;
+    }
+
+    &__right {
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            font-family: Rubik;
+        }
+    }
+}

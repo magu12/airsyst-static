@@ -1,0 +1,104 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 75, 89, 0);
+    top: 200%;
+    left: 0%;
+    z-index: 100;
+    transition: all 0.5s ease;
+
+    &.active {
+        top: 0;
+        background: rgba(68, 75, 89, 0.97);
+    }
+}
+
+.team-form {
+    width: 1165px;
+    height: 595px;
+    background: #F6F7FC;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    padding: 55px 95px 30px 50px;
+    transition: all 0.8s ease;
+
+    &.active {
+        left: 50%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        img {
+            width: 315px;
+            height: 405px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+    }
+
+    &__spec {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__name {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 18px;
+        color: #000000;
+    }
+
+    &__descr {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 130%;
+        max-height: 85%;
+        overflow-y: scroll;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.certificates-form {
+    background: #F6F7FC;
+    border-radius: 5px;
+    width: 665px;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        left: 50%;
+    }
+
+    img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    top: 17px;
+    right: 17px;
+}

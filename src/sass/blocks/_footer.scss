@@ -1,0 +1,29 @@
+.footer {
+    background: #EFF4FF;
+    padding: 75px 0 60px;
+    margin-top: 55px;
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+    .nav__item {
+        margin-bottom: 10px;
+    }
+    .time-work {
+        margin-bottom: 30px;
+    }
+    .mail img {
+        width: 27px;
+        margin-right: 13px;
+    }
+    .contacts {
+        margin-bottom: 30px;
+    }
+}

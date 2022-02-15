@@ -1,0 +1,24 @@
+.our-team {
+    margin-top: 115px;
+
+    &__items {
+        cursor: pointer;
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__name {
+        margin-top: 10px;
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,24 @@
+.project {
+    &__slide {
+        transform: scale(0.85);
+    }
+
+    &__slider {
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 50%;
+            color: #195CDF;
+            transform: scale(0.8);
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: -3px;
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: -3px;
+        }
+    }
+}

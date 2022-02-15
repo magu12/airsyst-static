@@ -1,0 +1,39 @@
+.reviews {
+    margin-top: 115px;
+    position: relative;
+    &__slider {
+        margin-top: 30px;
+        position: initial;
+    }
+    &__slide {
+        background: #F6F7FC;
+        border-radius: 5px;
+        padding: 27px;
+        transition: all 0.3s ease;
+        &:not(.swiper-slide-next) {
+            transform: scale(0.8);
+        }
+        img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 50%;
+        color: #195CDF;
+        transform: scale(0.8);
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: -10px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: -10px;
+    }
+    .btn {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}

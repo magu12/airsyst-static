@@ -1,0 +1,60 @@
+.order {
+    margin-top: 15px;
+
+    .sub-title {
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: left;
+        margin-top: 35px;
+    }
+
+    &__form {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        input {
+            width: 370px;
+            height: 40px;
+            border: 1px solid #CBD5E9;
+            border-radius: 3px;
+            padding: 10px 17px;
+        }
+    }
+
+    &__rec {
+        margin-top: 40px;
+    }
+
+    &__rec-null {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #515151;
+        margin-bottom: 25px;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    &__input {
+
+        input {
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+}

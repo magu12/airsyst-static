@@ -1,0 +1,26 @@
+.parts {
+    margin-top: 15px;
+
+    &__text {
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: normal;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 65px;
+        img {
+            width: 32%;
+            margin-bottom: 23px;
+            &:nth-child(n+4) {
+                width: 49%;
+            }
+        }
+    }
+}

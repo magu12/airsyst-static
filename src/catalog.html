@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="fonts/raleway/raleway.css">
+    <link rel="stylesheet" href="fonts/rubik/rubik.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>AirSyst</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <div class="time-work">
+                <img src="img/icons/time.svg" alt="Время работы">
+                <div class="time-work__items">
+                    <div class="time-work__item">
+                        <span>Пн-Вт:</span> 9:00-18:00
+                    </div>
+                    <div class="time-work__item">
+                        <span>Сб-Вс:</span> Выходной
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts__left">
+                    <h3>Отдел продаж</h3>
+                    <div class="smm">
+                        <a target="_blank" href="https://t.me/" class="smm__item"><img src="img/icons/telegram.svg"
+                                alt=""></a>
+                        <a target="_blank" href="https://wa.me/+375293456789" class="smm__item"><img
+                                src="img/icons/whatsapp.svg" alt=""></a>
+                        <a target="_blank" href="viber://chat?number=%2B375293456789" class="smm__item"><img
+                                src="img/icons/viber.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contacts__right">
+                    <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                    <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts__left">
+                    <h3>Отдел сервиса</h3>
+                    <div class="smm">
+                        <a target="_blank" href="https://t.me/" class="smm__item"><img src="img/icons/telegram.svg"
+                                alt=""></a>
+                        <a target="_blank" href="https://wa.me/+375293456789" class="smm__item"><img
+                                src="img/icons/whatsapp.svg" alt=""></a>
+                        <a target="_blank" href="viber://chat?number=%2B375293456789" class="smm__item"><img
+                                src="img/icons/viber.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contacts__right">
+                    <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                    <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                </div>
+            </div>
+            <div class="mail">
+                <img src="img/icons/mail.svg" alt="">
+                <a target="_blank" href="mailto:info@airsist.ru">info@airsist.ru</a>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="wrap">
+            <a href="/" class="logo">
+                <img src="img/images/airsyst.svg" alt="AirSyst">
+            </a>
+            <div class="nav__items">
+                <a href="/" class="nav__item">О компании</a>
+                <a href="/" class="nav__item">Наши проекты</a>
+                <a href="/" class="nav__item">Сертификаты</a>
+                <a href="/" class="nav__item">Контакты</a>
+            </div>
+            <a href="/" class="shopping-cart" attr-count="2">
+                <img src="img/icons/shopping card.png" alt="">
+            </a>
+        </div>
+    </nav>
+    <div class="bread-crumbs wrap">
+        <a href="/" class="bread-crumbs__item">Главная</a>
+        <a href="/" class="bread-crumbs__item">Оборудование</a>
+        <div class="bread-crumbs__item">Компрессоры</div>
+    </div>
+
+    <section class="catalog wrap">
+        <h1 class="title">
+            Компрессоры
+        </h1>
+        <div class="catalog__content">
+            <div class="filter">
+                <h2 class="filter__title">
+                    Фильтр
+                </h2>
+                <div class="filter__checkboxs" name="brands">
+                    <h3 class="filter__sub-title">
+                        Бренды
+                    </h3>
+                    <div class="filter__checkbox" name="Dali">
+                        <div class="filter__check">
+                            <img src="img/icons/check.svg">
+                        </div>
+                        <span>Dali</span>
+                    </div>
+                    <div class="filter__checkbox" name="Denair">
+                        <div class="filter__check">
+                            <img src="img/icons/check.svg">
+                        </div>
+                        <span>Denair</span>
+                    </div>
+                    <div class="filter__checkbox" name="Fini">
+                        <div class="filter__check">
+                            <img src="img/icons/check.svg">
+                        </div>
+                        <span>Fini</span>
+                    </div>
+                </div>
+                <div class="filter__range">
+                    <h3 class="filter__sub-title">
+                        Производительность, л/мин
+                    </h3>
+                    <div class="filter__inputs">
+                        <input type="text" name="min" placeholder="от (-500)">
+                        <input type="text" name="max" placeholder="до (500)">
+                    </div><!-- 
+                    <div class="range-slider flat" data-ticks-position='top'
+                        style='--min:-500; --max:500; --value-a:-500; --value-b:500; --suffix:""; --text-value-a:"-500"; --text-value-b:"500";'>
+                        <input type="range" min="-500" max="500" value="-500"
+                            oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))">
+                        <output></output>
+                        <input type="range" min="-500" max="500" value="500"
+                            oninput="this.parentNode.style.setProperty('--value-b',this.value); this.parentNode.style.setProperty('--text-value-b', JSON.stringify(this.value))">
+                        <output></output>
+                        <div class='range-slider__progress'></div>
+                    </div>   -->                  
+                    <h3 class="filter__sub-title">
+                        Производительность, л/мин
+                    </h3>
+                    <div class="filter__inputs">
+                        <input type="text" name="min" placeholder="от (-500)">
+                        <input type="text" name="max" placeholder="до (500)">
+                    </div><!-- 
+                    <div class="range-slider flat" data-ticks-position='top'
+                        style='--min:-500; --max:500; --value-a:-500; --value-b:500; --suffix:""; --text-value-a:"-500"; --text-value-b:"500";'>
+                        <input type="range" min="-500" max="500" value="-500"
+                            oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))">
+                        <output></output>
+                        <input type="range" min="-500" max="500" value="500"
+                            oninput="this.parentNode.style.setProperty('--value-b',this.value); this.parentNode.style.setProperty('--text-value-b', JSON.stringify(this.value))">
+                        <output></output>
+                        <div class='range-slider__progress'></div>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="catalog__items">
+                <a href="/" class="catalog__item">
+                    <img class="catalog__img" src="img/images/catalog-item.jpg" alt="">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                    <h2 class="catalog__name">
+                        ВОЗДУШНЫЙ ФИЛЬТР
+                    </h2>
+                    <h3 class="catalog__art">
+                        Артикул: 418496796
+                    </h3>
+                    <div class="catalog__count">
+                        <div class="catalog__minus">-</div>
+                        <input id="catalog-count" type="text" value="1">
+                        <div class="catalog__plus">+</div>
+                    </div>
+                    <div class="btn to-shopping-cart"><img src="img/icons/to-basket.svg" alt=""> В корзину</div>
+                </a>
+                <a href="/" class="catalog__item">
+                    <img src="img/images/catalog-item.jpg" alt="">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                    <h2 class="catalog__name">
+                        ВОЗДУШНЫЙ ФИЛЬТР
+                    </h2>
+                    <h3 class="catalog__art">
+                        Артикул: 418496796
+                    </h3>
+                    <div class="catalog__count">
+                        <div class="catalog__minus">-</div>
+                        <input id="catalog-count" type="text" value="1">
+                        <div class="catalog__plus">+</div>
+                    </div>
+                    <div class="btn to-shopping-cart"><img src="img/icons/to-basket.svg" alt=""> В корзину</div>
+                </a>
+                <a href="/" class="catalog__item">
+                    <img src="img/images/catalog-item.jpg" alt="">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                    <h2 class="catalog__name">
+                        ВОЗДУШНЫЙ ФИЛЬТР
+                    </h2>
+                    <h3 class="catalog__art">
+                        Артикул: 418496796
+                    </h3>
+                    <div class="catalog__count">
+                        <div class="catalog__minus">-</div>
+                        <input id="catalog-count" type="text" value="1">
+                        <div class="catalog__plus">+</div>
+                    </div>
+                    <div class="btn to-shopping-cart"><img src="img/icons/to-basket.svg" alt=""> В корзину</div>
+                </a>
+                <a href="/" class="catalog__item">
+                    <img src="img/images/catalog-item.jpg" alt="">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                    <h2 class="catalog__name">
+                        ВОЗДУШНЫЙ ФИЛЬТР
+                    </h2>
+                    <h3 class="catalog__art">
+                        Артикул: 418496796
+                    </h3>
+                    <div class="catalog__count">
+                        <div class="catalog__minus">-</div>
+                        <input id="catalog-count" type="text" value="1">
+                        <div class="catalog__plus">+</div>
+                    </div>
+                    <div class="btn to-shopping-cart"><img src="img/icons/to-basket.svg" alt=""> В корзину</div>
+                </a>
+                <a href="/" class="catalog__item">
+                    <img src="img/images/catalog-item.jpg" alt="">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                    <h2 class="catalog__name">
+                        ВОЗДУШНЫЙ ФИЛЬТР
+                    </h2>
+                    <h3 class="catalog__art">
+                        Артикул: 418496796
+                    </h3>
+                    <div class="catalog__count">
+                        <div class="catalog__minus">-</div>
+                        <input id="catalog-count" type="text" value="1">
+                        <div class="catalog__plus">+</div>
+                    </div>
+                    <div class="btn to-shopping-cart"><img src="img/icons/to-basket.svg" alt=""> В корзину</div>
+                </a>
+                <a href="/" class="catalog__item">
+                    <img src="img/images/catalog-item.jpg" alt="">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                    <h2 class="catalog__name">
+                        ВОЗДУШНЫЙ ФИЛЬТР
+                    </h2>
+                    <h3 class="catalog__art">
+                        Артикул: 418496796
+                    </h3>
+                    <div class="catalog__count">
+                        <div class="catalog__minus">-</div>
+                        <input id="catalog-count" type="text" value="1">
+                        <div class="catalog__plus">+</div>
+                    </div>
+                    <div class="btn to-shopping-cart"><img src="img/icons/to-basket.svg" alt=""> В корзину</div>
+                </a>
+            </div>
+            <div class="pagination">
+                <a href="#" class="pagination__start">
+                    В начало
+                </a>
+                <a href="#" class="pagination__before"><</a>
+                <div class="pagination__pages">
+                    <a href="#" class="pagination__page active">1,</a>
+                    <a href="#" class="pagination__page">2,</a>
+                    <a href="#" class="pagination__page">3,</a>
+                    <a href="#" class="pagination__page">4,</a>
+                    <a href="#" class="pagination__page">5</a>
+                </div>
+                <a href="#" class="pagination__after">></a>
+                <a href="#" class="pagination__end">
+                    В конец
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__item">
+                <a href="/" class="logo">
+                    <img src="img/images/airsyst.svg" alt="AirSyst">
+                </a>
+                <div class="copyright">
+                    © 2015-2022
+                </div>
+            </div>
+            <div class="footer__item">
+                <a href="/" class="nav__item">О компании</a>
+                <a href="/" class="nav__item">Наши проекты</a>
+                <a href="/" class="nav__item">Сертификаты</a>
+                <a href="/" class="nav__item">Контакты</a>
+            </div>
+            <div class="footer__item">
+                <div class="time-work">
+                    <img src="img/icons/time.svg" alt="Время работы">
+                    <div class="time-work__items">
+                        <div class="time-work__item">
+                            <span>Пн-Вт:</span> 9:00-18:00
+                        </div>
+                        <div class="time-work__item">
+                            <span>Сб-Вс:</span> Выходной
+                        </div>
+                    </div>
+                </div>
+                <div class="mail">
+                    <img src="img/icons/mail.svg" alt="">
+                    <a target="_blank" href="mailto:info@airsist.ru">info@airsist.ru</a>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="contacts">
+                    <div class="contacts__left">
+                        <h3>Отдел продаж</h3>
+                        <div class="smm">
+                            <a target="_blank" href="https://t.me/" class="smm__item"><img src="img/icons/telegram.svg"
+                                    alt=""></a>
+                            <a target="_blank" href="https://wa.me/+375293456789" class="smm__item"><img
+                                    src="img/icons/whatsapp.svg" alt=""></a>
+                            <a target="_blank" href="viber://chat?number=%2B375293456789" class="smm__item"><img
+                                    src="img/icons/viber.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="contacts__right">
+                        <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                        <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="contacts__left">
+                        <h3>Отдел сервиса</h3>
+                        <div class="smm">
+                            <a target="_blank" href="https://t.me/" class="smm__item"><img src="img/icons/telegram.svg"
+                                    alt=""></a>
+                            <a target="_blank" href="https://wa.me/+375293456789" class="smm__item"><img
+                                    src="img/icons/whatsapp.svg" alt=""></a>
+                            <a target="_blank" href="viber://chat?number=%2B375293456789" class="smm__item"><img
+                                    src="img/icons/viber.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="contacts__right">
+                        <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                        <a target="_blank" href="tel:+375293456789" class="tel">+375 (29) 345 67 89</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="team-form">
+            <div class="close">
+                <img src="img/icons/close.svg" alt="">
+            </div>
+            <div class="team-form__content">
+                <img src="img/images/director.jpg" alt="">
+                <div class="team-form__text">
+                    <div class="team-form__spec">
+                        СПЕЦИАЛИСТ ПО БЕЗМАСЛЯННЫМ КОМПРЕССОРАМ
+                    </div>
+                    <div class="team-form__name">
+                        Сердар Гексель Шен (гражданин Турции) 34 года.
+                    </div>
+                    <div class="team-form__descr">
+                        <span>Опыт работы более 16 лет. Инженер во 2-м поколении.</span>
+                        Ремонтом компрессоров занимается с 18 лет. С 2005 по 2013 год работал в компании Селмак
+                        Компрессор лтд. (Стамбул, Турция). Компания была официальным дилером Sullair и Ingersoll Rand в
+                        Турции. Основная
+                        специализация капитальные ремонты винтовых блоков и ступеней сжатия винтовых компрессоров.
+                        <br><span>С 2013 по 2017</span> работал в официальном дилере Atlas
+                        Copco. Основная специализация обслуживание и ремонт винтовых безмаслянных и центробежных
+                        компрессоров.
+                        <br><span>С 2017 по 2020</span> год работал в Air Energy Compressed Air Specialists Ltd., Дублин
+                        Ирландия.
+                        Компания является
+                        дилером Ingersoll Rand. Основная специализация капитальный ремонт и обслуживание безмаслянных
+                        винновых и центробежных компрессоров Ingersoll Rand и Atlas Copco.
+                        <br><span>С 2021</span> года работает в группе компаний ООО “КОМПРЕССОР-МАШ” и ООО “Мой
+                        компрессор” руководителем
+                        сервисной службы на территории Республики Беларусь и Российской федерации. Практикующий тренер.
+                        <br><br>
+                        <span>Реализованные проекты:</span><br>
+                        Европейский Союз:
+                        - TECOMET HEALTH ZT37; ZT55 (замена сервисных наборов 16000; 40000)
+                        - GILLEAD BLOOD FILTERS ZR75; ZR90 (замена сервисных наборов 4000; 8000; 16000)
+                        - CADBURYS CHOCLATE ZR90VSD; ZR110VSD; COMPAIR D90 (замена сервисных
+                        <br><br>
+                        <span>Реализованные проекты:</span><br>
+                        Европейский Союз:
+                        - TECOMET HEALTH ZT37; ZT55 (замена сервисных наборов 16000; 40000)
+                        - GILLEAD BLOOD FILTERS ZR75; ZR90 (замена сервисных наборов 4000; 8000; 16000)
+                        - CADBURYS CHOCLATE ZR90VSD; ZR110VSD; COMPAIR D90 (замена сервисных
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="certificates-form">
+            <div class="close"><img src="img/icons/close.svg"></div>
+            <img src="img/images/certificates.jpg" alt="">
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

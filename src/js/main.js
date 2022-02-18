@@ -28,6 +28,11 @@ $(document).ready(function ($) {
     $(this).addClass('active').siblings().removeClass('active');
     $('.card__item').removeClass('active').eq($(this).index()).addClass('active');
   });
+/* 
+  $('.bid__item').hover(function(){
+    $(this).find('.bid__company.original').addClass('active');
+    setTimeout('')
+  }); */
 
   var cardThumbsSwiper = new Swiper(".card__slider-thumbs", {
     spaceBetween: 15,

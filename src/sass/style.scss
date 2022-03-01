@@ -3,6 +3,8 @@
     margin: 0 auto;
 }
 
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
+
 .btn {
     display: block;
     background: #195CDF;
@@ -51,6 +53,7 @@
 @import './blocks/shop-cart';
 @import './blocks/order';
 @import './blocks/filter';
+@import './blocks/error';
 
 .title {
     font-family: Rubik;
@@ -91,4 +94,12 @@
 
 * {
     font-family: Raleway;
+    font-feature-settings: 'lnum';
+    -moz-font-feature-settings: 'lnum=1';
+    -ms-font-feature-settings: 'lnum';
+    -webkit-font-feature-settings: 'lnum';
+    -o-font-feature-settings: 'lnum';
 }
+
+
+@import './blocks/media';

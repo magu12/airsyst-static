@@ -1,0 +1,32 @@
+.error {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__code {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 5vw;
+        line-height: 130.5%;
+        text-transform: uppercase;
+        color: #195CDF;
+    }
+
+    &__message {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4vw;
+        line-height: 130.5%;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .btn {
+        margin-top: 2vw;
+        text-transform: uppercase;
+        font-size: 1vw;
+    }
+}

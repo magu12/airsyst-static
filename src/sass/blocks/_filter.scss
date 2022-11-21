@@ -1,22 +1,90 @@
 .filter {
     width: 270px;
     background: #F6F7FC;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     padding: 12px;
     display: flex;
     flex-direction: column;
     margin-right: 30px;
     height: max-content;
+    position: relative;
+    &.posAbs {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .filter-apply {
+        display: block;
+        background: #195cdf;
+        border-radius: 5px;
+        width: 270px;
+        height: 45px;
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        transform: translate(-5%, 0%);
+        border-radius: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 2;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &.posAbs {
+            position: absolute;
+            transform: translate(-5%, 100%);
+        }
+    }
+
     &__title {
         font-weight: bold;
         font-size: 18px;
         margin: 0;
+        position: relative;
+
+        span {
+            font-size: 14px;
+            font-weight: normal;
+            opacity: 0.6;
+            position: absolute;
+            right: 0;
+            top: 20%;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__sub-title {
         font-weight: bold;
         font-size: 16px;
         margin: 0;
+        position: relative;
+        overflow: hidden;
+
+        .close {
+            top: -5px;
+            right: -50px;
+            transition: all 0.3s ease;
+
+            &.active {
+                right: -5px;
+            }
+        }
     }
 
     &__checkboxs {
@@ -65,6 +133,7 @@
         background: #FFFFFF;
         border-radius: 5px;
         padding: 6px;
+
         .range-slider:not(:last-child) {
             margin-bottom: 20px;
 
@@ -77,6 +146,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
         input {
             width: 49%;
             height: 26px;

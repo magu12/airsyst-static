@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+    cursor: pointer;
 
     &:hover {
         text-decoration: none;
@@ -26,10 +27,47 @@
         background: #1245A9;
         filter: drop-shadow(0px 21px 30px rgba(81, 81, 81, 0.4));
     }
+
+    &-disabled {
+        cursor: initial;
+        filter: grayscale(80%);
+
+        &:hover {
+            filter: grayscale(80%);
+
+        }
+    }
 }
+
+.to-header {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+    background: #195cdf;
+    border-radius: 100%;
+    padding: 15px;
+    display: flex;
+    transition: all 0.3s ease;
+
+    svg {
+        width: 100%;
+    }
+
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
 
 @import './blocks/header';
 @import './blocks/nav';
+@import './blocks/hero';
+@import './blocks/dealers';
 @import './blocks/bid';
 @import './blocks/reviews';
 @import './blocks/reviews-page';
@@ -53,7 +91,13 @@
 @import './blocks/shop-cart';
 @import './blocks/order';
 @import './blocks/filter';
+@import './blocks/page-gen';
+@import './blocks/centrifugal';
+@import './blocks/denair';
 @import './blocks/error';
+@import './blocks/search';
+@import './blocks/reg';
+@import './blocks/history';
 
 .title {
     font-family: Rubik;
@@ -71,6 +115,12 @@
     line-height: 130%;
     text-align: center;
     color: #000000;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .bread-crumbs {

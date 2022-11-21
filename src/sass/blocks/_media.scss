@@ -370,6 +370,7 @@
 
             &-thumbs {
                 height: 10vw;
+
             }
         }
 
@@ -680,6 +681,7 @@
             position: relative;
             width: 10vw;
             height: 5vw;
+            cursor: pointer;
 
             img {
                 position: absolute;
@@ -734,6 +736,7 @@
         .nav__item {
             font-size: 4.7vw;
             margin-bottom: 2vw;
+            font-weight: 500;
         }
 
         .contacts {
@@ -769,7 +772,7 @@
             height: 65vw;
 
             img {
-                height: 75%;
+                height: 100%;
             }
         }
 
@@ -777,6 +780,14 @@
             width: 100%;
             padding-bottom: 15vw;
             margin-bottom: 7vw;
+
+            &:nth-child(1) {
+                .bid__preview {
+                    img {
+                        object-position: 100% 300%;
+                    }
+                }
+            }
 
             &:nth-child(2) {
                 .bid__preview {
@@ -849,7 +860,7 @@
 
     .footer {
         padding: 3.5vw 0;
-        height: 105vw;
+        height: 106vw;
 
         .wrap {
             flex-direction: column;
@@ -961,6 +972,14 @@
                 font-size: 4vw;
             }
         }
+
+        &__top {
+            display: block;
+
+            .about__text {
+                width: 100%;
+            }
+        }
     }
 
     .our-team {
@@ -1039,6 +1058,10 @@
     .certificates {
         margin-top: 5vw;
 
+        &__name {
+            bottom: -60px;
+        }
+
         &__descr {
             font-size: 3.8vw;
         }
@@ -1056,6 +1079,10 @@
         width: 90%;
         height: 65vh;
         border-radius: 0;
+
+        &.w55 {
+            width: 90%;
+        }
 
         .close {
             top: 0;
@@ -1158,7 +1185,7 @@
 
         &__name {
             position: absolute;
-            top: 20vw;
+            top: 24vw;
             width: 50%;
             right: 1vw;
             font-size: 3.1vw;
@@ -1288,6 +1315,25 @@
             }
         }
 
+        &__row {
+            justify-content: space-between;
+            margin-right: 0;
+        }
+
+        &__spec-name {
+            font-size: 3.6vw;
+            width: 52%;
+        }
+
+        &__value {
+            font-size: 3.6vw;
+            width: 43%;
+        }
+
+        &__text {
+            font-size: 4.2vw;
+        }
+
         .show-certificate {
             position: absolute;
             width: 44vw;
@@ -1312,6 +1358,14 @@
             &-thumbs {
                 height: 20vw;
             }
+        }
+
+        &__thumbs {
+            flex-direction: column;
+        }
+
+        &__thumb {
+            background: #f6f7fc63;
         }
 
         &__info {
@@ -1543,6 +1597,11 @@
         &__imgs {
             img {
                 width: 48%;
+                height: auto;
+
+                &:nth-child(n+4) {
+                    height: auto;
+                }
 
                 &:last-child {
                     width: 100%;
@@ -1579,9 +1638,16 @@
             overflow: hidden;
             position: relative;
             transition: all 0.6s ease;
+
             &__title {
                 cursor: pointer;
+
+                span {
+                    right: 10%;
+                    top: 6%;
+                }
             }
+
             &::before {
                 position: absolute;
                 content: url('../img/icons/arrow-down.svg');
@@ -1593,8 +1659,21 @@
             &.active {
                 max-height: 500vw;
 
+                overflow: visible;
+
                 &::before {
                     transform: rotate(180deg);
+                }
+            }
+
+            &-apply {
+                bottom: -40px;
+                left: 0vw;
+                width: 100%;
+
+                &.posAbs {
+
+                    transform: initial;
                 }
             }
         }
@@ -1609,6 +1688,11 @@
             width: 100%;
             margin-bottom: 3vw;
             padding: 2vw;
+            padding-bottom: 35vw;
+
+            .catalog .catalog__item .catalog__count {
+                bottom: 15%;
+            }
         }
 
         &__img {
@@ -1641,6 +1725,7 @@
 
         .btn {
             font-size: 5vw;
+            width: 96%;
 
             img {
                 width: 10vw;
@@ -1651,12 +1736,215 @@
 
     .pagination {
         width: 95%;
+        bottom: -30px;
+
         &__end,
         &__start,
         &__after,
         &__before,
-        &__page {
-            font-size: 4vw;
+        &__page,
+        .current {
+            font-size: 3.6vw;
+        }
+
+
+    }
+
+    .success {
+        width: 90%;
+        padding: 10vw 2vw;
+
+        &__text {
+            font-size: 5vw;
+            text-align: center;
         }
     }
+
+    .project__slide {
+        transform: scale(.75);
+        -webkit-transform: scale(.75);
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .service {
+        .about__top img {
+            width: 100%;
+        }
+
+        &__imgs {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin-bottom: 10px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .page-gen {
+        &-img {
+            height: 30vw;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        &-info {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                order: 2;
+                width: 100%;
+            }
+
+            &__text {
+                width: 100%;
+            }
+        }
+
+        &-clear {
+            flex-direction: column;
+            margin-top: 10px;
+
+            &-text__items {
+                flex-direction: column;
+            }
+
+            &-text__item {
+                width: 100%;
+            }
+        }
+
+        &-text {
+            margin-top: 20px;
+        }
+
+        &-small-img__legend {
+            padding: 0;
+            height: auto;
+
+            span {
+                font-size: 4vw;
+            }
+        }
+
+        &-our-char {
+            margin-top: 20px;
+
+            &__items {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            &__item {
+                width: 100%;
+                margin-bottom: 10px;
+
+                img {
+                    height: 80vw;
+                    object-fit: contain;
+                }
+            }
+
+            &__text {
+                font-size: 4.7vw;
+                margin-top: 5px;
+
+                p {
+                    margin-bottom: 2vw;
+                }
+
+                span {
+                    font-size: 4.2vw;
+                }
+            }
+        }
+    }
+
+    .centrifugal {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 6vw;
+
+            &-card {
+                font-size: 6vw;
+            }
+        }
+
+        &__col {
+            font-size: 4vw;
+        }
+
+        &__sub-title {
+            font-size: 5vw;
+        }
+
+        &__text {
+            font-size: 4.6vw;
+        }
+    }
+
+    .denair-spec {
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+            margin-bottom: 10px;
+            height: auto;
+        }
+
+        &_three {
+            .denair-spec__item {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__icons {
+            margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__icon {
+            width: 48%;
+            margin-bottom: 10px;
+
+            h3 {
+                margin-top: 5px;
+                font-size: 4vw;
+            }
+        }
+    }
+
+    .denair-tables {
+        margin-top: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        font-size: 4.2vw;
+    }
+
+
 }

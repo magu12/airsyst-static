@@ -19,6 +19,13 @@
                 animation-play-state: running;
             }
         }
+        &:nth-child(1) {
+            .bid__preview {
+                img {
+                    object-position: 100% 800%;
+                }
+            }
+        }
     }
 
     &__preview {

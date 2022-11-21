@@ -75,7 +75,7 @@
     background: #F6F7FC;
     border-radius: 5px;
     width: 665px;
-    height: 80vh;
+    height: 95vh;
     position: absolute;
     top: 50%;
     left: 150%;
@@ -84,21 +84,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    &.w55 {
+        width: 55%;
+    }
     &.active {
         left: 50%;
     }
 
     img {
-        width: 90%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
         object-fit: contain;
+    }
+}
+
+.success {
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%,-50%);
+    padding: 60px 40px;
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    &.active {
+        left: 50%;
+    }
+    &__text {
+        font-size: 24px;
+        margin-top: 15px;
     }
 }
 
 .close {
     position: absolute;
     cursor: pointer;
-    top: 17px;
-    right: 17px;
+    top: 5px;
+    right: 5px;
 }

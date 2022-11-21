@@ -5,7 +5,7 @@
     padding: 50px 360px;
 
     form {
-        width: 448px;
+        width: 460px;
         background: #FFFFFF;
         border-radius: 5px;
         display: flex;
@@ -30,6 +30,11 @@
         font-weight: 300;
         font-size: 16px;
         margin-top: 14px;
+        transition: all 0.3s ease;
+        &.form-error {
+            border: 1px solid red;
+            color: red;
+        }
     }
 
     textarea {
@@ -44,6 +49,10 @@
         span {
             font-weight: 300;
             font-size: 14px;
+            transition: all 0.3s ease;
+            &.form-error {
+                color: red;
+            }
         }
     }
 
@@ -62,6 +71,9 @@
             opacity: 0;
             transition: all 0.3s ease;
             transform: translate(10%, -15%);
+        }
+        &.form-error {
+            border: 1px solid red;
         }
 
         &.active {

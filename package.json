@@ -23,5 +23,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "air-datepicker": "^3.3.0"
+  }
 }

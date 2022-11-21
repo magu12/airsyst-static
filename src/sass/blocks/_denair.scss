@@ -1,0 +1,85 @@
+.denair-spec {
+    margin-top: 45px;
+
+    .text {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__item {
+        width: 270px;
+        height: 200px;
+        padding: 30px 20px;
+        background: #F6F7FC;
+        border: 1px solid #195CDF;
+    }
+
+    &_three {
+        .denair-spec__item {
+            width: 370px;
+            height: 150px;
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__descr {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 200px;
+
+        img {
+            width: 90px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        h3 {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+    
+}
+
+.denair-tables {
+    margin-top: 100px;
+    .sub-title {
+        margin-top: 40px;
+        text-align: left;
+    }
+    .text {
+        margin-top: 10px;
+        p {
+            margin-bottom: 5px;
+        }
+    }
+}

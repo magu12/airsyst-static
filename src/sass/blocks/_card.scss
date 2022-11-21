@@ -97,7 +97,7 @@
     .show-certificate {
         margin-top: 20px;
         padding: 9px 7px;
-        width: 84px;
+        width: 105px;
         height: 42px;
         background: #FFFFFF;
         border-radius: 2px;
@@ -170,18 +170,60 @@
         border-radius: 0px 5px 5px 5px;
         transition: all 0.3s ease;
         transform: translateX(-100%);
-
+        height: max-content;
+        max-height: 0;
+        .page-gen-clear-text__item {
+            width: 100%;
+        }
         &:nth-child(2) {
             transform: translateX(100%);
         }
+        &:nth-child(3) {
+            transform: translateX(200%);
+        }
+        &:nth-child(4) {
+            transform: translateX(300%);
+        }
+        &:nth-child(5) {
+            transform: translateX(400%);
+        }
+        &:nth-child(6) {
+            transform: translateX(500%);
+        }
+
 
         &.active {
             transform: translateX(0%);
+            max-height: 100%;
         }
 
         &:nth-child(2).active {
             transform: translateX(-100%);
 
+        }
+        &:nth-child(3).active {
+            transform: translateX(-200%);
+
+        }
+        &:nth-child(4).active {
+            transform: translateX(-300%);
+
+        }
+        &:nth-child(5).active {
+            transform: translateX(-400%);
+
+        }
+        &:nth-child(6).active {
+            transform: translateX(-500%);
+
+        }
+        img {
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 10px;
         }
     }
 
@@ -196,6 +238,7 @@
         font-weight: 500;
         font-size: 18px;
         width: 260px;
+        margin-right: 20px;
     }
 
     &__value {
@@ -205,6 +248,7 @@
         img {
             margin-top: -5px;
             height: 22.5px;
+            width: initial;
         }
     }
 
@@ -216,6 +260,34 @@
         font-size: 18px;
     }
 
+    &-certificate-slider {
+        width: 90%;
+        height: 80vh;
+        margin: 0 auto;
+        margin-top: 10vh;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .certificates__slider {
+            height: 100%;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: 46%;
+        }
+    }
 
-
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+            width: 32.5%;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    } 
 }

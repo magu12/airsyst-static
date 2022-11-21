@@ -1,0 +1,50 @@
+.hero {
+    &-slider {
+        background: #EFF4FF;
+        border-radius: 5px;
+        margin-top: 38px;
+
+    }
+
+    &-slide {
+
+        position: relative;
+        padding: 105px 58px;
+        padding-right: 620px;
+
+        h2.title {
+            text-align: left;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 130.5%;
+            text-transform: none;
+            /* identical to box height, or 47px */
+
+            color: #000000;
+        }
+
+        h3.text {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #000000;
+        }
+
+        .btn {
+            margin-top: 24px;
+        }
+
+        img {
+            position: absolute;
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 90%;
+        }
+    }
+}

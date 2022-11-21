@@ -13,6 +13,8 @@
         display: flex;
         flex-wrap: wrap;
         width: 870px;
+        align-items: stretch;
+        height: max-content;
     }
 
     &__item {
@@ -23,6 +25,8 @@
         border-radius: 5px;
         padding: 20px;
         transition: all 0.3s ease;
+        padding-bottom: 135px;
+        position: relative;
 
         &:nth-child(3n) {
             margin-right: 0;
@@ -64,7 +68,6 @@
 
     &__name {
         margin: 0;
-        margin-top: 15px;
         font-weight: bold;
         font-size: 18px;
         text-transform: uppercase;
@@ -75,7 +78,7 @@
         font-family: Rubik;
         font-weight: normal;
         margin: 0;
-        margin-top: 5px;
+        margin-top: 20px;
         font-size: 14px;
         line-height: 130.5%;
         text-transform: uppercase;
@@ -115,15 +118,20 @@
     }
 
     .btn {
-        width: 100%;
-        margin-top: 20px;
         font-family: Raleway;
         font-weight: 600;
         height: 48px;
+        position: absolute;
+        width: 85%;
+        bottom: 10px;
 
         img {
             margin-right: 12px;
         }
+    }
+    .catalog__item .catalog__count {
+        position: absolute;
+        bottom: 14%;
     }
 }
 
@@ -137,28 +145,36 @@
     justify-content: center;
     font-weight: 500;
     color: #515151;
-    &__start, &__end {
+
+    &__start,
+    &__end {
         font-size: 14px;
         margin: 0 22px;
         color: #515151;
     }
-    &__before, &__after {
+
+    &__before,
+    &__after {
         margin: 0 7px;
         color: #515151;
         margin-top: -3px;
     }
+
     &__pages {
         display: flex;
         align-items: center;
     }
+
     &__page {
         font-family: Rubik;
         font-weight: 400;
         margin: 0 2px;
         color: #515151;
+
         &.active {
             color: #195CDF;
         }
 
     }
+
 }

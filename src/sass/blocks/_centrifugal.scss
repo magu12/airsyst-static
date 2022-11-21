@@ -1,0 +1,81 @@
+.centrifugal {
+    display: flex;
+    margin-top: 40px;
+
+    img {
+        width: 370px;
+        object-fit: contain;
+        margin-right: 130px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin-top: 30px;
+        display: flex;
+    }
+
+    &__col {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+
+        &:nth-child(1) {
+            width: 185px;
+            margin-right: 20px;
+        }
+
+        &:nth-child(2) {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        &:nth-child(3) {
+            width: 70px;
+        }
+    }
+
+    &__title-card {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    &__sub-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-top: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &-spec {
+        .page-gen-clear-text__item {
+            margin-top: 20px;
+        }
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+}
